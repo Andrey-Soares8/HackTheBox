@@ -1,78 +1,77 @@
-# HackTheBox - Writeups
+# HackTheBox Writeups
 
-Repositório com todas as máquinas resolvidas do **HackTheBox**, com foco em metodologia, enumeração, exploração e privilege escalation.
+Repositório dedicado com todas as máquinas resolvidas do **HackTheBox**, writeups detalhados, metodologia e aprendizados.
 
-**Objetivo:** Demonstrar capacidade de resolver ambientes reais de pentest.
+**Foco:** Pentest prático, enumeração, exploitation e privilege escalation.
 
 ---
 
-## Progresso
+## Progresso Atual
 
-| Tier          | Máquinas Resolvidas | Status     |
-|---------------|---------------------|------------|
-| Tier 0        | 0 / ?               | Em andamento |
-| Tier 1        | 0 / ?               | Não iniciado |
-| Tier 2        | 0 / ?               | Não iniciado |
+| Tier              | Máquinas Resolvidas | Status          |
+|-------------------|---------------------|-----------------|
+| Starting Point Tier 0 | 0 / 10+            | Em andamento    |
+| Starting Point Tier 1 | 0                   | Não iniciado    |
+| Starting Point Tier 2 | 0                   | Não iniciado    |
+| Machines (Retired)    | 0                   | Não iniciado    |
 
 **Total resolvido:** 0 máquinas
 
 ---
 
-## Estrutura
+## Estrutura do Repositório
+HackTheBox/
+├── Starting Point/
+│   ├── Tier 0/
+│   ├── Tier 1/
+│   └── Tier 2/
+├── Machines/
+│   ├── Easy/
+│   ├── Medium/
+│   └── Hard/
+├── images/
+└── README.md
 
-- **Starting Point** → Máquinas guiadas (recomendado para iniciantes)
-- **Machines** → Máquinas normais (retireiras)
+
+---
+
+## Metodologia Padrão
+
+Toda máquina segue esta estrutura:
+
+1. **Reconhecimento** (Nmap, WhatWeb, Gobuster, FFUF)
+2. **Enumeração** (Portas abertas, serviços, diretórios, usuários)
+3. **Exploração / Foothold** (Ganho de acesso inicial)
+4. **Privilege Escalation** (User → Root/System)
+5. **Post-Exploitation** (Flags, evidências)
+6. **Aprendizados**
 
 ---
 
 ## Máquinas Resolvidas
 
 ### Starting Point - Tier 0
-
-- **[Machine Name](Starting Point/Tier 0/machine-name/)** - Writeup + Screenshots
+*(em breve)*
 
 ### Starting Point - Tier 1
-
-*(em breve)*
-
-### Starting Point - Tier 2
-
 *(em breve)*
 
 ---
 
-## Metodologia Utilizada
+## Skills em Desenvolvimento
 
-Todas as máquinas seguem esta metodologia:
-
-1. **Reconhecimento** (Nmap, Gobuster, FFUF)
-2. **Enumeração** (Portas, Serviços, Diretórios, Usuários)
-3. **Exploração** (Vulnerabilidades encontradas)
-4. **Ganho de Shell** (Foothold)
-5. **Privilege Escalation** (User → Root)
-6. **Post-Exploitation** (Flags, Artefatos)
+- Enumeração completa de redes e serviços
+- Exploração Web e de serviços
+- Linux & Windows Privilege Escalation
+- Uso avançado de ferramentas (Metasploit, LinPEAS, WinPEAS, Bloodhound, etc)
+- Documentação técnica
 
 ---
 
-## Skills Desenvolvidas
+## Conexão com outros repositórios
 
-- Enumeração ativa e passiva
-- Web exploitation
-- Linux privilege escalation
-- Windows privilege escalation
-- Metasploit básico
-- Uso de ferramentas (Nmap, Burp, LinPEAS, WinPEAS, etc)
+- **[web-security-labs](https://github.com/Andrey-Soares8/web-security-labs)** → PortSwigger Academy + Web Vulnerabilities
 
 ---
 
-## Próximos Passos
-
-- Completar **Tier 0** e **Tier 1** do Starting Point
-- Documentar todas as máquinas com writeups detalhados
-- Publicar resumos no LinkedIn
-
----
-
-⭐ **Última atualização:** Junho 2026
-
-Qualquer dúvida ou feedback, pode abrir uma Issue!
+Quer feedback? Pode abrir uma **Issue**!
