@@ -19,22 +19,6 @@ Repositório dedicado com todas as máquinas resolvidas do **HackTheBox**, write
 
 ---
 
-## Estrutura do Repositório
-HackTheBox/
-├── Starting Point/
-│   ├── Tier 0/
-│   ├── Tier 1/
-│   └── Tier 2/
-├── Machines/
-│   ├── Easy/
-│   ├── Medium/
-│   └── Hard/
-├── images/
-└── README.md
-
-
----
-
 ## Metodologia Padrão
 
 Toda máquina segue esta estrutura:
