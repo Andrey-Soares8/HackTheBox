@@ -1,19 +1,78 @@
-# Hack The Box Labs
+# HackTheBox - Writeups
 
-Repositório com anotações e writeups dos laboratórios resolvidos no Hack The Box.
+Repositório com todas as máquinas resolvidas do **HackTheBox**, com foco em metodologia, enumeração, exploração e privilege escalation.
 
-O objetivo é documentar meu aprendizado em segurança ofensiva de forma prática, organizada e ética.
+**Objetivo:** Demonstrar capacidade de resolver ambientes reais de pentest.
+
+---
+
+## Progresso
+
+| Tier          | Máquinas Resolvidas | Status     |
+|---------------|---------------------|------------|
+| Tier 0        | 0 / ?               | Em andamento |
+| Tier 1        | 0 / ?               | Não iniciado |
+| Tier 2        | 0 / ?               | Não iniciado |
+
+**Total resolvido:** 0 máquinas
+
+---
 
 ## Estrutura
 
-```txt
-HackTheBox/
-├── Starting-Point/
-│   └── Meow/
-│       ├── README.md
-│       └── images/
-└── README.md
+- **Starting Point** → Máquinas guiadas (recomendado para iniciantes)
+- **Machines** → Máquinas normais (retireiras)
 
-| Máquina | Módulo         | Status    | Tema                                       |
-| ------- | -------------- | --------- | ------------------------------------------ |
-| Meow    | Starting Point | Concluído | Telnet, enumeração básica, login sem senha |
+---
+
+## Máquinas Resolvidas
+
+### Starting Point - Tier 0
+
+- **[Machine Name](Starting Point/Tier 0/machine-name/)** - Writeup + Screenshots
+
+### Starting Point - Tier 1
+
+*(em breve)*
+
+### Starting Point - Tier 2
+
+*(em breve)*
+
+---
+
+## Metodologia Utilizada
+
+Todas as máquinas seguem esta metodologia:
+
+1. **Reconhecimento** (Nmap, Gobuster, FFUF)
+2. **Enumeração** (Portas, Serviços, Diretórios, Usuários)
+3. **Exploração** (Vulnerabilidades encontradas)
+4. **Ganho de Shell** (Foothold)
+5. **Privilege Escalation** (User → Root)
+6. **Post-Exploitation** (Flags, Artefatos)
+
+---
+
+## Skills Desenvolvidas
+
+- Enumeração ativa e passiva
+- Web exploitation
+- Linux privilege escalation
+- Windows privilege escalation
+- Metasploit básico
+- Uso de ferramentas (Nmap, Burp, LinPEAS, WinPEAS, etc)
+
+---
+
+## Próximos Passos
+
+- Completar **Tier 0** e **Tier 1** do Starting Point
+- Documentar todas as máquinas com writeups detalhados
+- Publicar resumos no LinkedIn
+
+---
+
+⭐ **Última atualização:** Junho 2026
+
+Qualquer dúvida ou feedback, pode abrir uma Issue!
