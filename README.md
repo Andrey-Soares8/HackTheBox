@@ -1,61 +1,56 @@
-# HackTheBox Writeups
+# HackTheBox — Writeups
 
-Repositório dedicado com todas as máquinas resolvidas do **HackTheBox**, writeups detalhados, metodologia e aprendizados.
+Repositório com writeups das máquinas resolvidas no HackTheBox Starting Point. Cada solução documenta o raciocínio completo: reconhecimento, exploração e aprendizados — não apenas os comandos usados.
 
-**Foco:** Pentest prático, enumeração, exploitation e privilege escalation.
+**Repositório complementar:** [web-security-labs](https://github.com/Andrey-Soares8/web-security-labs) — 24+ writeups de vulnerabilidades web (PortSwigger Academy)
 
 ---
 
 ## Progresso Atual
 
-| Tier              | Máquinas Resolvidas | Status          |
-|-------------------|---------------------|-----------------|
-| Starting Point Tier 0 | 0 / 10+            | Em andamento    |
-| Starting Point Tier 1 | 0                   | Não iniciado    |
-| Starting Point Tier 2 | 0                   | Não iniciado    |
-| Machines (Retired)    | 0                   | Não iniciado    |
+| Tier | Máquinas Resolvidas | Status |
+|---|---|---|
+| **Starting Point Tier 0** | 5 / 8 | 🟡 Em andamento |
+| **Starting Point Tier 1** | 0 | ⏳ Próximo |
+| **Starting Point Tier 2** | 0 | ⏳ Planejado |
 
-**Total resolvido:** 0 máquinas
-
----
-
-## Metodologia Padrão
-
-Toda máquina segue esta estrutura:
-
-1. **Reconhecimento** (Nmap, WhatWeb, Gobuster, FFUF)
-2. **Enumeração** (Portas abertas, serviços, diretórios, usuários)
-3. **Exploração / Foothold** (Ganho de acesso inicial)
-4. **Privilege Escalation** (User → Root/System)
-5. **Post-Exploitation** (Flags, evidências)
-6. **Aprendizados**
+**Total: 5 máquinas resolvidas**
 
 ---
 
-## Máquinas Resolvidas
+## Starting Point — Tier 0
 
-### Starting Point - Tier 0
-*(em breve)*
-
-### Starting Point - Tier 1
-*(em breve)*
-
----
-
-## Skills em Desenvolvimento
-
-- Enumeração completa de redes e serviços
-- Exploração Web e de serviços
-- Linux & Windows Privilege Escalation
-- Uso avançado de ferramentas (Metasploit, LinPEAS, WinPEAS, Bloodhound, etc)
-- Documentação técnica
+| # | Máquina | Serviço | Writeup |
+|---|---|---|---|
+| 1 | Meow | Telnet | ✅ Concluído |
+| 2 | Fawn | FTP | ✅ Concluído |
+| 3 | Dancing | SMB | ✅ Concluído |
+| 4 | Redeemer | Redis | [📄 Ver writeup](Starting-point/Tier-0/redeemer.md) |
+| 5 | Explosion | RDP | ✅ Concluído |
 
 ---
 
-## Conexão com outros repositórios
+## Metodologia
 
-- **[web-security-labs](https://github.com/Andrey-Soares8/web-security-labs)** → PortSwigger Academy + Web Vulnerabilities
+Toda máquina segue essa estrutura:
+
+1. **Reconhecimento** — nmap, identificação de serviços e versões
+2. **Enumeração** — exploração do serviço encontrado
+3. **Exploração** — acesso inicial e captura da flag
+4. **Aprendizados** — o que a máquina ensinou de novo
 
 ---
 
-Quer feedback? Pode abrir uma **Issue**!
+## Skills Demonstradas
+
+- Reconhecimento com nmap (`-sV`, `-sC`, `-Pn`, `-p`)
+- Acesso a serviços sem autenticação (Telnet, FTP anônimo, Redis, SMB)
+- Enumeração de bancos Redis (`INFO`, `KEYS *`, `GET`)
+- Leitura de compartilhamentos SMB sem credencial
+- Documentação técnica com contexto, comandos e análise de impacto
+
+---
+
+## Ferramentas
+
+nmap · redis-cli · ftp · smbclient · rdesktop · Kali Linux
