@@ -1,90 +1,99 @@
 # HackTheBox Writeups
 
-Repositório dedicado com todas as máquinas resolvidas do **HackTheBox**, writeups detalhados, metodologia e aprendizados.
+![HTB](https://img.shields.io/badge/HackTheBox-Starting%20Point-blue?style=for-the-badge&logo=hackthebox)
+![Linux](https://img.shields.io/badge/Linux-Expertise-red?style=for-the-badge&logo=linux)
+![Windows](https://img.shields.io/badge/Windows-Pentesting-blue?style=for-the-badge&logo=windows)
 
-**Foco:** Pentest prático, enumeração, exploitation e privilege escalation.
+Repositório com **writeups detalhados** de todas as máquinas resolvidas no **Hack The Box**.
 
-**Repositório complementar:** [web-security-labs](https://github.com/Andrey-Soares8/web-security-labs) — PortSwigger Academy + Web Vulnerabilities
+**Foco principal:** Enumeração completa, exploração realista, privilege escalation e documentação técnica de qualidade.
 
 ---
 
-## Progresso Atual
+## Repositórios Complementares
 
-| Tier | Máquinas Resolvidas | Status |
-|---|---|---|
-| **Starting Point Tier 0** | 1+ | ✅ Concluído |
-| **Starting Point Tier 1** | 2 | ✅ Concluído |
-| **Starting Point Tier 2** | 1 | ✅ Concluído |
-| **Machines (Retired)** | 0 | ⏳ Próximo |
+- **[Web Security Labs](https://github.com/Andrey-Soares8/web-security-labs)** — PortSwigger Academy + Web Vulnerabilities
 
-**Total resolvido: 4 máquinas documentadas**
+---
+
+## 📊 Progresso Atual
+
+| Tier                     | Máquinas | Status          |
+|--------------------------|----------|-----------------|
+| **Starting Point Tier 0**| Todas    | ✅ Concluído    |
+| **Starting Point Tier 1**| Todas    | ✅ Concluído    |
+| **Starting Point Tier 2**| Todas    | ✅ Concluído    |
+| **Retired Machines**     | 0        | ⏳ Em breve     |
+
+**Total:** 6+ máquinas documentadas
 
 ---
 
 ## Máquinas Resolvidas
 
 ### Starting Point — Tier 0
-
-| Máquina | Serviço | Writeup |
-|---|---|---|
-| Redeemer | Redis | [📄 Ver writeup](Starting-point/Tier-0/redeemer.md) |
+| Máquina     | Serviço          | Writeup |
+|-------------|------------------|--------|
+| Redeemer    | Redis            | [📄 Ver writeup](Starting-point/Tier-0/redeemer.md) |
 
 ### Starting Point — Tier 1
-
-| Máquina | Serviço | Writeup |
-|---|---|---|
-| Three | HTTP / AWS S3 | [📄 Ver writeup](Starting-point/Tier-1/three.md) |
-| Vaccine | FTP / PostgreSQL | [📄 Ver writeup](Starting-point/Tier-1/vaccine.md) |
+| Máquina     | Serviço                  | Writeup |
+|-------------|--------------------------|--------|
+| Three       | HTTP / AWS S3            | [📄 Ver writeup](Starting-point/Tier-1/three.md) |
+| Vaccine     | FTP / PostgreSQL SQLi    | [📄 Ver writeup](Starting-point/Tier-1/vaccine.md) |
 
 ### Starting Point — Tier 2
+| Máquina     | Serviço                  | Writeup |
+|-------------|--------------------------|--------|
+| Archetype   | SMB / MSSQL (Windows)    | [📄 Ver writeup](Starting-point/Tier-2/archetype.md) |
 
-| Máquina | Serviço | Writeup |
-|---|---|---|
-| Archetype | SMB / MSSQL (Windows) | [📄 Ver writeup](Starting-point/Tier-2/archetype.md) |
+*(Vou atualizando conforme for resolvendo mais máquinas)*
 
 ---
 
 ## Metodologia Padrão
 
-Toda máquina segue esta estrutura:
+Todas as writeups seguem esta estrutura:
 
-1. **Reconhecimento** (Nmap, WhatWeb, Gobuster, FFUF)
-2. **Enumeração** (Portas abertas, serviços, diretórios, usuários)
-3. **Exploração / Foothold** (Ganho de acesso inicial)
-4. **Privilege Escalation** (User → Root/System)
-5. **Post-Exploitation** (Flags, evidências)
-6. **Aprendizados**
+1. **Reconhecimento** (`nmap`, `whatweb`, `gobuster`, `ffuf`)
+2. **Enumeração** detalhada
+3. **Exploração / Foothold** (ganho de shell)
+4. **Privilege Escalation** (user → root)
+5. **Post-Exploitation** + Flags
+6. **Aprendizados & Dificuldades**
 
 ---
 
 ## Skills Demonstradas
 
-- Enumeração completa de redes e serviços (nmap, smbclient, ftp)
-- Exploração de bancos NoSQL/cache mal configurados (Redis)
-- Exploração de cloud storage mal configurado (AWS S3 buckets)
-- SQL Injection com sqlmap (PostgreSQL) e obtenção de os-shell
-- Reverse shell + estabilização de TTY
-- Privilege escalation Linux via sudo misconfiguration (GTFOBins)
-- Exploração de ambiente Windows/AD: SMB → MSSQL → xp_cmdshell → psexec
-- Uso de Impacket (mssqlclient, psexec) para pentest em Active Directory
-- Quebra de hashes (John the Ripper — ZIP, MD5)
-- Documentação técnica completa com cadeia de exploração e mitigação
+- SQL Injection avançada (PostgreSQL + `sqlmap`)
+- Reverse Shell + estabilização de TTY
+- Privilege Escalation via `sudo vi` (GTFOBins)
+- Exploração de serviços mal configurados (Redis, SMB, FTP, AWS S3)
+- Uso de Impacket (`mssqlclient`, `psexec`)
+- Quebra de hashes (John the Ripper)
+- Documentação técnica clara e organizada
 
 ---
 
-## Ferramentas
+## Ferramentas Utilizadas
 
-nmap · redis-cli · smbclient · ftp · sqlmap · John the Ripper · Impacket (mssqlclient, psexec) · netcat · Kali Linux
-
----
-
-## Próximos Passos
-
-- Concluir Starting Point Tier 0 (demais máquinas)
-- Avançar para Machines normais (Easy/Medium) fora do Starting Point
-- Explorar Active Directory mais a fundo (BloodHound, Kerberoasting)
-- Documentar técnicas de Windows Privilege Escalation (WinPEAS)
+`nmap` • `sqlmap` • `ffuf` • `gobuster` • `redis-cli` • `smbclient` • `ftp` • `Impacket` • `John` • `netcat` • Kali Linux
 
 ---
 
-Quer feedback? Pode abrir uma **Issue**!
+## Próximos Objetivos
+
+- Máquinas **Easy** e **Medium** fora do Starting Point
+- Aprofundar em Active Directory (BloodHound, Kerberoasting, etc.)
+- Windows Privilege Escalation
+- Criar writeups mais avançados com screenshots e comandos
+
+---
+
+**Quer contribuir ou dar feedback?**  
+Abra uma **[Issue](https://github.com/Andrey-Soares8/HackTheBox/issues)** ou me envie mensagem!
+
+---
+
+**Feito com ☕ e muita persistência.**
