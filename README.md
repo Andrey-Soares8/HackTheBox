@@ -16,40 +16,32 @@ Repositório com **writeups detalhados** de todas as máquinas resolvidas no **H
 
 ---
 
-## 📊 Progresso Atual
-
-| Tier                     | Máquinas | Status          |
-|--------------------------|----------|-----------------|
-| **Starting Point Tier 0**| Todas    | ✅ Concluído    |
-| **Starting Point Tier 1**| Todas    | ✅ Concluído    |
-| **Starting Point Tier 2**| Todas    | ✅ Concluído    |
-| **Retired Machines**     | 0        | ⏳ Em breve     |
-
-**Total:** 6+ máquinas documentadas
-
----
-
 ## Máquinas Resolvidas
 
 ### Starting Point — Tier 0
-| Máquina     | Serviço          | Writeup |
-|-------------|------------------|--------|
-| Redeemer    | Redis            | [📄 Ver writeup](Starting-point/Tier-0/redeemer.md) |
+| Máquina     | Serviço              | Writeup |
+|-------------|----------------------|--------|
+| Meow        | HTTP                 | [📄 Ver writeup](Startint-point/Tier-0/1.Meow.md) |
+| Fawn        | LDAP                 | [📄 Ver writeup](Startint-point/Tier-0/2.Fawn.md) |
+| Dancing     | FTP                  | [📄 Ver writeup](Startint-point/Tier-0/3.Dancing.md) |
+| Redeemer    | Redis                | [📄 Ver writeup](Startint-point/Tier-0/4.Redeemer.md) |
 
 ### Starting Point — Tier 1
-| Máquina     | Serviço                  | Writeup |
-|-------------|--------------------------|--------|
-| Three       | HTTP / AWS S3            | [📄 Ver writeup](Starting-point/Tier-1/three.md) |
-| Vaccine     | FTP / PostgreSQL SQLi    | [📄 Ver writeup](Starting-point/Tier-1/vaccine.md) |
+| Máquina      | Serviço                    | Writeup |
+|--------------|----------------------------|--------|
+| Appointment  | HTTP / SQLi                | [📄 Ver writeup](Startint-point/Tier-1/1.Appointment.md) |
+| Sequel       | MSSQL                      | [📄 Ver writeup](Startint-point/Tier-1/2.Sequel.md) |
+| Crocodile    | Web / File Upload          | [📄 Ver writeup](Startint-point/Tier-1/3.Crocodile.md) |
+| Responder    | LLMNR / NTLM               | [📄 Ver writeup](Startint-point/Tier-1/4.responder.md) |
+| Three        | HTTP / AWS S3              | [📄 Ver writeup](Startint-point/Tier-1/5.Three.md) |
 
 ### Starting Point — Tier 2
-| Máquina     | Serviço                  | Writeup |
-|-------------|--------------------------|--------|
-| Archetype   | SMB / MSSQL (Windows)    | [📄 Ver writeup](Starting-point/Tier-2/archetype.md) |
-
-*(Vou atualizando conforme for resolvendo mais máquinas)*
-
----
+| Máquina     | Serviço                       | Writeup |
+|-------------|-------------------------------|--------|
+| Vaccine     | PostgreSQL SQLi + sudo vi     | [📄 Ver writeup](Startint-point/Tier-2/1.Vaccine.md) |
+| Oopsie      | Web / File Upload             | [📄 Ver writeup](Startint-point/Tier-2/2.Oopsie.md) |
+| Archetype   | SMB / MSSQL (Windows)         | [📄 Ver writeup](Startint-point/Tier-2/3.Archetype.md) |
+| Unified     | ?                             | [📄 Ver writeup](Startint-point/Tier-2/4.unified.md) |
 
 ## Metodologia Padrão
 
