@@ -43,6 +43,11 @@ Repositório com **writeups detalhados** de todas as máquinas resolvidas no **H
 | Archetype   | SMB / MSSQL (Windows)         | [📄 Ver writeup](Startint-point/Tier-2/3.Archetype.md) |
 | Unified     | ?                             | [📄 Ver writeup](Startint-point/Tier-2/4.unified.md) |
 
+### Sherlocks (DFIR / Blue Team)
+| Sherlock    | Tema                          | Writeup |
+|-------------|-------------------------------|--------|
+| Baggage     | Shellbags / Registry Forensics | [📄 Ver writeup](Sherlocks/1.Baggage.md) |
+
 ## Metodologia Padrão
 
 Todas as writeups seguem esta estrutura:
