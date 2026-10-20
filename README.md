@@ -47,6 +47,7 @@ Repositório com **writeups detalhados** de todas as máquinas resolvidas no **H
 | Sherlock    | Tema                          | Writeup |
 |-------------|-------------------------------|--------|
 | Baggage     | Shellbags / Registry Forensics | [📄 Ver writeup](Sherlocks/1.Baggage.md) |
+| PCAP_Analysis | Network Forensics / Wireshark | [📄 Ver writeup](Sherlocks/2.PCAP_Analysis.md) |
 
 ## Metodologia Padrão
 
