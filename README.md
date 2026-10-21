@@ -48,6 +48,7 @@ Repositório com **writeups detalhados** de todas as máquinas resolvidas no **H
 |-------------|-------------------------------|--------|
 | Baggage     | Shellbags / Registry Forensics | [📄 Ver writeup](Sherlocks/1.Baggage.md) |
 | PCAP_Analysis | Network Forensics / Wireshark | [📄 Ver writeup](Sherlocks/2.PCAP_Analysis.md) |
+| Remote_Access_Regret | Chrome History / AnyDesk Forensics | [📄 Ver writeup](Sherlocks/3.Remote_Access_Regret.md) |
 
 ## Metodologia Padrão
 
