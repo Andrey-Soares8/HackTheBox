@@ -51,6 +51,7 @@ Repositório com **writeups detalhados** de todas as máquinas resolvidas no **H
 | Remote_Access_Regret | Chrome History / AnyDesk Forensics | [📄 Ver writeup](Sherlocks/3.Remote_Access_Regret.md) |
 | Shellshock_Attack | Network Forensics / CVE-2014-6271 | [📄 Ver writeup](Sherlocks/4.Shellshock_Attack.md) |
 | Learn_Sigma | Detection Engineering / Sigma | [📄 Ver writeup](Sherlocks/5.Learn_Sigma.md) |
+| Noxious     | LLMNR Poisoning / NTLMv2 crack | [📄 Ver writeup](Sherlocks/6.Noxious.md) |
 
 ## Metodologia Padrão
 
